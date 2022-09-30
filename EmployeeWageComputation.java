@@ -26,8 +26,32 @@ public class EmployeeWageComputation {
 		
 		dailyWage = fullDayHour * wagePerHour;
 		System.out.println("Daily wage of Employee is " + dailyWage);
-	    
+	     
+		// employee part time
+		
 		dailyWage = partTimeHour * wagePerHour;
 		System.out.println("Employee is Part time");
+	
+		
+		// Switch case
+		
+		int dailyWage2 = partTimeHour * 10;
+		
+		empPresent = inp.nextInt(2);
+		switch (empPresent) {
+		case 0:
+			System.out.println("Employee is Present");
+			break;
+		case 1:
+			System.out.println("Employee is Part Time");
+			break;
+		case 2:
+			System.out.println("Employee is Absent");
+			break;
+
+		}
+	
 	}
+	
+	
 }
